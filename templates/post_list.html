@@ -2,10 +2,27 @@
 
 
 {% block content %}
-    Список постів
+<div class="card">
+    <div class="card-header">Список постів</div>
+    <ul class="list-group list-group-flush">
     {% for p in post_list %}
-            <div>
-                {{p}}
-            </div>
-        {% endfor %}
+            <li class="list-group-item">
+                <p>{{p[2]}}</p>
+                <span>{{p[3]}}</spamn
+            </li>
+    {% endfor %}
+    </ul>
+    <div class="card-footer">
+        Кінець)
+    </div>
+</div>
+
+<div class="mb-3">
+    <form method="post">
+        <label>Номер категорії</label>
+        <input type="number" name="category_id">
+        <textarea class="form-control" name="text" ></textarea>
+        <input type='submit' value="Створити пост" class="btn btn-success">
+    </form>
+</div>
 {% endblock %}

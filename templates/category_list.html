@@ -2,12 +2,20 @@
 
 
 {% block content %}
-    Список категорій
-    {% for c in category_list %}
-        <div>
-            <a href="/categories/{{c[0]}}">
-                {{c[1]}}
-            </a>
+    <div class="card card-list">
+        <div class="card-header">Список категорій</div>
+        <ul class="list-group list-group-flush">
+            {% for c in category_list %}
+                <li class="list-group-item">
+                    <a href="/categories/{{c[0]}}">
+                        {{c[1]}}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="card-footer">
+            Кінець)
         </div>
-    {% endfor %}
+    </div>
+
 {% endblock %}

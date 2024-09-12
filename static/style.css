@@ -1,0 +1,34 @@
+body{
+    background: rgb(255, 227, 231);
+}
+
+.list-group-item a,p,span{
+    text-decoration: none;
+    color: rgb(255, 2, 141);
+}
+
+.list-group-item span{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.card-list{
+    width: 50;
+    margin: 15px
+}
+
+.navbarr{
+    background: rgb(255, 182, 193) !important;
+}
+
+.mb-3{
+    color: rgb(255, 2, 141);
+}
+
+.card-footer{
+    color: rgb(150, 0, 82);
+}
+
+.card-header{
+    color: rgb(150, 0, 82);
+}
